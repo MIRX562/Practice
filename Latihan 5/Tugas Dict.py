@@ -28,4 +28,3 @@ if play=="y":
     print("jawaban benar : ",int(point/10))
     print("jawaban salah : ",int(10-(point/10)))
     print("skor anda     : ",point,"\n")
-            
