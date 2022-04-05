@@ -25,6 +25,6 @@ if play=="y":
              print("jawaban yang benar : ",src[key])
              continue
     print("\nGame selesai")
-    print("jawaban benar : ",int(point/10))
+    print("jawaban benar : ",int(point/10
     print("jawaban salah : ",int(10-(point/10)))
     print("skor anda     : ",point,"\n")
