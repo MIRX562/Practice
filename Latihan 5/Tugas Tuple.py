@@ -1,0 +1,5 @@
+print("Program menampilkan isi tuple dalam  sebuah string")
+kala = ('a','k','u',' ','u','m','u','r',' ',"20",' ','t','a','h','u','n')
+print(kala)
+jadi = "".join(kala)
+print(jadi)
