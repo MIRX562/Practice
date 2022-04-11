@@ -1,7 +1,10 @@
+from re import X
+
+
 def fpb(a,b):
     if b==0:
         return a
     else:
         return fpb(b,a%b)
-
-print(fpb(45,20))
+x = fpb(45,20)
+print(x)

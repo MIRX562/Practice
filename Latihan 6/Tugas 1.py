@@ -14,3 +14,4 @@ x = input("Masukkan string : ")
 # print kebalikannya dengan memanggil fungsi reverse
 print ("kebalikannya : ")
 print(reverse(x))
+print() 
