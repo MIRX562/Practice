@@ -28,12 +28,13 @@ while True:
         if len(nama) > 0 : 
             # perulangan untuk menampilkan semua data yang ada dalam  list
             while cur < len(nama):
-                print ("ID",nama[cur],"\n" ,
-                "Nama           : ",nama[cur],"\n",
-                "NIM            : ",nim[cur],"\n",
-                "Tanggal Lahir  : ",tanggal_lahir[cur],"\n",
-                "jenis kelamin  : ",jenis_kelamin[cur],"\n",
-                "Prodi          : ",prodi[cur],"\n\n")
+                print (
+                    "ID",nama[cur], "\n",
+                    "Nama           : ",nama[cur],"\n",
+                    "NIM            : ",nim[cur],"\n",
+                    "Tanggal Lahir  : ",tanggal_lahir[cur],"\n",
+                    "jenis kelamin  : ",jenis_kelamin[cur],"\n",
+                    "Prodi          : ",prodi[cur],"\n\n")
                 cur = cur + 1
         # jika list kosong
         else :
