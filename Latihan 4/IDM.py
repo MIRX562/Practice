@@ -21,7 +21,8 @@ while True:
         
         if len(nama) > 0 : 
             while current < len(nama):
-                print ("ID",nama[current],"\n" ,
+                print (
+                "ID",nama[current],"\n" ,
                 "Nama           : ",nama[current],"\n",
                 "NIM            : ",nim[current],"\n",
                 "Tanggal Lahir  : ",tanggal_lahir[current],"\n",

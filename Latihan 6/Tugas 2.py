@@ -8,5 +8,5 @@ def fpb(a,b):
         # menggunakan  metode euler
         return fpb(b,a%b)
 # menampilkan output program
-x = fpb(45,20)
+x = fpb(13,23)
 print(x)
