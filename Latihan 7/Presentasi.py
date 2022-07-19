@@ -1,41 +1,41 @@
 print("Program sorting data dengan metode bubble sort")
 
-def bubble_sort_asc (input_list):
+def bubble_sort_asc (init):
     # x sebagai pannjang list
-    x = len(input_list)
+    x = len(init)
     # looping sebanyak x-1
     for i in range(x-1):
         # memreriksa tiap elemen list
         for j in range(0, x-i-1):
             # menukar posisi jika ditemukan elemen yanng lebih besar
-            if input_list[j] > input_list[j+1]:
-                input_list[j], input_list[j+1] = input_list[j+1], input_list[j]
-    return print(input_list)
+            if init[j] > init[j+1]:
+                init[j], init[j+1] = init[j+1], init[j]
+    return print(init)
 
-def bubble_sort_dsc (input_list):
+def bubble_sort_dsc (init):
     # x sebagai pannjang list
-    x = len(input_list)
+    x = len(init)
     # looping sebanyak x-1
     for i in range(x-1):
         # memreriksa tiap elemen list
         for j in range(0, x-i-1):
             # menukar posisi jika ditemukan elemen yanng lebih kecil
-            if input_list[j] < input_list[j+1]:
-                input_list[j], input_list[j+1] = input_list[j+1], input_list[j]
-    return print(input_list)
-
+            if init[j] < init[j+1]:
+                init[j], init[j+1] = init[j+1], init[j]
+    return print(init)
+#mengulang hingga ada input break
 while True :
     print(
-        "\n||-------------------Menu-------------------|| :\n",
-        "  1. Demo(Contoh)\n",
-        "  2. Input data manual\n",
-        "  9. Exit"
+        "\n<--Menu--> :\n",
+        "1. Demo(Contoh)\n",
+        "2. Input data manual\n",
+        "9. Exit"
     )
     menu = input("   Pilih : ")
     if menu == "1":
         a = [5,1,2,4,9,3,7,0,8,6]
-        print("sebelum sorting : ",a,"\n",)
-        print("setelah sorting :")
+        print("\nsebelum sorting : ",a)
+        print("\nsetelah sorting :")
         print("keatas(ascending) : ")
         bubble_sort_asc(a),
         print("\nkebawah(descending) : ")
@@ -45,7 +45,7 @@ while True :
         x =[]
         n = int(input("banyak data :"))
         for i in range(n):
-            y = int(input("Data :"))
+            y = input("Data :")
             x.append(y)
         
         print("\nList Input =",x)
